@@ -1,0 +1,276 @@
+body {
+    
+    font-family: 'Merriweather', serif;
+    font-weight: 300
+}
+
+button {
+    font-family: 'Merriweather', serif!important;
+}
+
+h1, h2, h3, h4, h5, h6, span {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 800;
+}
+
+ul {
+    list-style-type: none;;
+    text-align: center;
+    padding: 0;
+}
+
+p {
+    line-height: 28px;
+    
+}
+
+a {
+    color: #000;
+}
+a:hover {
+    text-decoration: none;
+   
+}
+
+#contact {
+    color:#000;
+}
+
+#contact:hover {
+    color: #fff;
+}
+
+
+
+
+.container {
+    background: #fff;
+}
+
+/*  header */
+
+.logo {
+    max-width: 120px;
+}
+
+.logo:hover {
+    cursor: pointer;
+}
+
+nav button:first-child {
+    border: none;
+    transition: all 200ms ease;
+}
+
+nav button:nth-child(2){
+    /* background: #8C43FF; */
+
+    border: 2px solid #8c43ff;
+
+    transition: all 500ms ease;
+}
+
+
+nav button:hover:nth-child(2){
+    background: #8c43ff;
+    color: #000;
+    
+    transition: all 200ms ease;
+}
+
+nav button:first-child:hover {
+    color: #8C43FF;
+    
+}
+#submit {
+    border: 2px solid #8c43ff;
+    border-radius: 15px;
+    transition: all 500ms ease;
+}
+
+#submit:hover {
+    background: #8c43ff;
+    color: #fff;
+}
+
+ 
+
+
+ .developer {
+     margin: 4rem;
+ }
+
+ 
+
+ .gear img {
+     width: 100%;
+     
+ }
+
+ .about {
+     color: #fff;
+     background: #8C43FF;
+ }
+
+ #main-about {
+     padding: 6em 0;
+ }
+
+ .skills {
+     margin-top: -80px;
+     border-radius: 10px;
+     
+ }
+
+ .skills-shadow {
+    -webkit-box-shadow: -2px 2px 22px -15px rgba(140,67,255,1);
+-moz-box-shadow: -2px 2px 22px -15px rgba(140,67,255,1);
+box-shadow: -2px 2px 22px -15px rgba(140,67,255,1);
+ }
+ 
+
+ 
+ .skills span {
+     color: #8C43FF;
+     font-weight: 600;
+     text-transform: capitalize;
+ }
+
+ .skills_rounded  {
+     border-radius: 15px;
+ }
+
+
+ 
+/*  works */
+
+.works {
+    margin-top: 8rem;
+}
+
+.green {
+    background: green;
+}
+
+.projects div {
+    height: 200px;
+    cursor: pointer;
+    border-radius: 20px;
+}
+
+.works .col img {
+    max-width: 270px;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: #008CBA;
+}
+.col:hover .overlay {
+    opacity: 1;
+  }
+
+  .overlay h2 {
+    transform: scale(1);
+    -webkit-transition: .25s ease-in-out;
+    transition: .25s ease-in-out;
+  }
+
+  .overlay button {
+    border: 1px solid #8C43FF;
+    transition: all 500ms ease;
+  }
+
+  .overlay button:hover {
+    background: #8C43FF;    
+    color:#fff;
+  }
+
+  .broadmoor {
+      background: url('../images/works/homepage-pool.jpg');
+      background-size: cover;
+  }
+
+
+  .union {
+    background: url('../images/works/union.jpg');
+      background-size: cover;
+  }
+
+  .ginger {
+    background: url('../images/works/ginger-room.jpg');
+      background-size: cover;
+  }
+
+  .westside {
+    background: url('../images/works/riverBG.jpg');
+    background-size: cover;
+  }
+
+  .weather-app {
+      background: url("../images/bg.jpg");
+      background-size: cover;
+  }
+
+
+
+  /* Connect */
+
+  .connect {
+      margin: 8rem 0;
+  }
+
+  .connect ul li {
+      margin: 40px;
+      cursor: pointer;
+  }
+
+  .connect ul li::after {
+      content: '';
+      display: block;
+      width:0;
+      height:4px;
+      margin-top:5px;
+      background: #8C43FF;
+      transition: all 1s;
+  }
+
+ 
+  .connect ul li:hover::after {
+  width: 100%;
+}
+
+
+
+  .connect ul li img{
+    max-width: 85px;
+}
+
+footer {
+    padding: 4rem 0;
+    background: #8C43FF
+}
+
+.quote span {
+    color: #e8e8e8cc;
+    font-size: 21px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    display: block;
+    
+}
+
+
+/* contact */
+
+#contact-developer img {
+ transform: translateY(-50%)
+}
