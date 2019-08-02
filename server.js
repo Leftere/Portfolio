@@ -7,12 +7,19 @@ const nodemailer = require('nodemailer');
 
 const app = express();
 
+const PORT = process.env.PORT || 3000;
+
+
 app.engine('handlebars', exphbs());
 app.set('view engine', 'handlebars');
 
-app.get('/', (req,res, next) => {
-    res.render('contact', {layout: false});
-})
+// app.get('/', (req,res) => {
+//     res.sendFile(path.join(__dirname, 'public', 'index.html'));
+// })
+
+// set a static folder
+
+app.use(express.static(path.join(__dirname, 'public')))
 
 app.use('/public', express.static(path.join(__dirname, 'public')));
 //body parser 
@@ -70,4 +77,4 @@ app.post('/send', (req,res) => {
 })
 
 
-app.listen(3000, () => console.log('server started'));
+app.listen(PORT, () => console.log('server started'));
