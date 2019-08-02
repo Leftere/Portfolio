@@ -42,8 +42,13 @@ app.post('/send', (req,res) => {
         port: 587,
         secure: false,
         auth: {
+               type: 'oauth2',
                user: 'eugen.lefter@gmail.com',
-               pass: 'Patric45'
+               clientId: '64949659164-4tq4qpsgsdpl77gqq5a0b5gfitp610ga.apps.googleusercontent.com',
+               clientSecret: 'kglT817TkLOjkcSY_esYuu_T',
+               accessToken: "ya29.GltYB4AiNRzazK2Djy-deMMd8Cs1HyBtQvhjKMNnkwS1CtyWVsmaGkkx2d0d3em0O65VIXD_qH7uBd-j37fmNa0jhZq4JTOPy9rajFbp2w73efGURIqOeAgOoCEH",
+               refreshToken: '1/wPIx2uC0-9aIBW-CqC_ywFfIL0wnHRVtM_2W0m8p40g'
+               
            },
            
       });
@@ -70,6 +75,14 @@ app.post('/send', (req,res) => {
 console.log(req.body)    
     
 })
+
+app.use(function(req, res, next) {
+    res.header("Access-Control-Allow-Origin", "*");
+    res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
+    next();
+  });
+
+
 
 
 
