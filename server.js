@@ -42,17 +42,14 @@ app.post('/send', (req,res) => {
         port: 587,
         secure: false,
         auth: {
-               type: 'oauth2',
+               type: 'Oauth2',
                user: 'eugen.lefter@gmail.com',
                clientId: '64949659164-4tq4qpsgsdpl77gqq5a0b5gfitp610ga.apps.googleusercontent.com',
                clientSecret: 'kglT817TkLOjkcSY_esYuu_T',
-               access_token: "ya29.GltbB0IqXM6MwecNW6bj7Rb9Ic-sLHvn6g3d2Z8AYuKIWFfIHQTzmFzL5v8l-7min07P8qXwyDiMULr1abN81oBsSX-DI0R9dDLLi0B2AhW6CaD7vpEuKqTOlagW", 
-                scope: "https://mail.google.com/", 
-                token_type: "Bearer", 
-                expires_in: 3600, 
-                refresh_token: "1/vqJF50hv1KcVjZq1lqQ1vr9QByPu5aQap2PM3HPeCZrEaZPYJXSS-gAR3x7ITPUv"
-                            
-                        },
+               accessToken: "ya29.GltbB1A5TcBN9qGDqFeen6jQ9SRFQkIWFS63HUtOC40Qn2brPD1qoZxOj8cYl3z2GXa3MqEYvP7DD3zK6CNef3IWdUBUUHdlT5FpZ7fBycB_yzrN8GPjzLMLhhRW",
+               refreshToken: '1/CqjNXn6x-bkVvpz05RMKVk9y6kBcdPx6Bl2IpR5XeqbiodbREcKHEwIgOOi-S-io',
+            //    expires: 1484314697598
+           },
            
       });
 
