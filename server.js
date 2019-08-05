@@ -46,10 +46,13 @@ app.post('/send', (req,res) => {
                user: 'eugen.lefter@gmail.com',
                clientId: '64949659164-4tq4qpsgsdpl77gqq5a0b5gfitp610ga.apps.googleusercontent.com',
                clientSecret: 'kglT817TkLOjkcSY_esYuu_T',
-               accessToken: "ya29.GltYB4AiNRzazK2Djy-deMMd8Cs1HyBtQvhjKMNnkwS1CtyWVsmaGkkx2d0d3em0O65VIXD_qH7uBd-j37fmNa0jhZq4JTOPy9rajFbp2w73efGURIqOeAgOoCEH",
-               refreshToken: '1/wPIx2uC0-9aIBW-CqC_ywFfIL0wnHRVtM_2W0m8p40g'
-               
-           },
+               access_token: "ya29.GltbB0IqXM6MwecNW6bj7Rb9Ic-sLHvn6g3d2Z8AYuKIWFfIHQTzmFzL5v8l-7min07P8qXwyDiMULr1abN81oBsSX-DI0R9dDLLi0B2AhW6CaD7vpEuKqTOlagW", 
+                scope: "https://mail.google.com/", 
+                token_type: "Bearer", 
+                expires_in: 3600, 
+                refresh_token: "1/vqJF50hv1KcVjZq1lqQ1vr9QByPu5aQap2PM3HPeCZrEaZPYJXSS-gAR3x7ITPUv"
+                            
+                        },
            
       });
 
@@ -69,6 +72,7 @@ app.post('/send', (req,res) => {
       console.log("Preview URL: %s", nodemailer.getTestMessageUrl(info));
 
       res.render('contact', {layout: false, msg: 'email has been sent'})
+      
       })
     
       
