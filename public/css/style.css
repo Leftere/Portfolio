@@ -59,12 +59,13 @@ a:hover {
 
 nav button:first-child {
     border: none;
+    background-color: #fff;
     transition: all 200ms ease;
 }
 
 nav button:nth-child(2){
     /* background: #8C43FF; */
-
+    background-color: #fff;
     border: 2px solid #8c43ff;
 
     transition: all 500ms ease;
