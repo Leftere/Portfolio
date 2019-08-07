@@ -1,6 +1,7 @@
 const express = require('express');
 const bodyParser = require('body-parser');
 const exphbs = require("express-handlebars");
+const keys = require('./config/keys');
 
 const path = require('path');
 const nodemailer = require('nodemailer');
@@ -36,6 +37,10 @@ app.post('/send', (req,res) => {
         <p>${req.body.message}</p>
     `;
 
+
+    /// clientID : 64949659164-adq7dsldsldarcljfboc7qqn56np3mog.apps.googleusercontent.com
+    /// clientSecrete: 4ZVtMje1W-nItdkitCrXJVtb
+
     let transporter = nodemailer.createTransport({
         host: "smtp.gmail.com",
         service: 'gmail',
@@ -44,10 +49,10 @@ app.post('/send', (req,res) => {
         auth: {
                type: 'Oauth2',
                user: 'eugen.lefter@gmail.com',
-               clientId: '64949659164-4tq4qpsgsdpl77gqq5a0b5gfitp610ga.apps.googleusercontent.com',
-               clientSecret: 'wYOHpjuhXZDAX5c8PD1_PcxI',
-               accessToken: "ya29.GltcB6eqKsE85FsENA2h5CJ1rnk9ec4SrYw8-LmN5fsZ7SoNKpzW1Ct3-NKj0j0m3ewg9Zg0zHlYIvs2TXR_I2t4FIwa6ipfZIfNghterTOC8D0lTJte-MOXNM5d",
-               refreshToken: '1/A2sB6wNXv3JXRjByN_8TZ2DCKuA2OtONoQWKLNPwn_I',
+               clientId:'64949659164-adq7dsldsldarcljfboc7qqn56np3mog.apps.googleusercontent.com',
+               clientSecret: '4ZVtMje1W-nItdkitCrXJVtb',
+               accessToken: "ya29.GltdB2J_68vXh-A7-6uuZYDFycw7JvmM4kWjanSD0_4soOjFscUbdLexQn6oQtsRY2KxVq7XYWJSQSlcMOZItabeXxZe8_0pClNZ9FGn_g2FkEZuvv81uo_x9wMG",
+               refreshToken: '1/I9SmHs2nM9-fAvokBXQS5WouRgNmi2HeaHMAgTfT6pQ',
             //    expires: 1484314697598
            },
            
