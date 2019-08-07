@@ -38,8 +38,7 @@ app.post('/send', (req,res) => {
     `;
 
 
-    /// clientID : 64949659164-adq7dsldsldarcljfboc7qqn56np3mog.apps.googleusercontent.com
-    /// clientSecrete: 4ZVtMje1W-nItdkitCrXJVtb
+    
 
     let transporter = nodemailer.createTransport({
         host: "smtp.gmail.com",
