@@ -47,10 +47,10 @@ app.post('/send', (req,res) => {
         auth: {
                type: 'Oauth2',
                user: 'eugen.lefter@gmail.com',
-               clientId:'64949659164-adq7dsldsldarcljfboc7qqn56np3mog.apps.googleusercontent.com',
-               clientSecret: '4ZVtMje1W-nItdkitCrXJVtb',
-               accessToken: "ya29.GltdB2J_68vXh-A7-6uuZYDFycw7JvmM4kWjanSD0_4soOjFscUbdLexQn6oQtsRY2KxVq7XYWJSQSlcMOZItabeXxZe8_0pClNZ9FGn_g2FkEZuvv81uo_x9wMG",
-               refreshToken: '1/I9SmHs2nM9-fAvokBXQS5WouRgNmi2HeaHMAgTfT6pQ',
+               clientId:'64949659164-e9e4rc11jrq0qcc9eja60oucbuoohegv.apps.googleusercontent.com',
+               clientSecret: 'klhiJ1xpQBLaFw1zxlxV10Qk',
+               accessToken: "ya29.GltkB2jiIHKHM2Aref-BYRUMS04hOZKVC8R9Ae04gS4sRKcK1xpNGF8PVilQqjfy-w4v6w5hD32q51Sm_YZZmZ5EkwQNa-wkTjvm5jeTsBas9AmB6Xfqg26l0Mq9",
+               refreshToken: '1/4rcyrhIjHLjg6KcZd4_ZOpwlYhgoZHsCo74dg6ePTUg',
             //    expires: 1484314697598
            },
            
